@@ -1,22 +1,57 @@
-import "./App.css"
-import React, { useEffect, useState } from "react"
+import React from "react"
+import "./app.css"
+import SearchUser from "./components/search/Search"
+
+export const ContactsContext = React.createContext()
 
 function App() {
-  const [width, setWidth] = useState(window.innerWidth)
-  const handleResize = () => {
-    setWidth(window.innerWidth)
-  }
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize)
-  }, [])
-
+  const contacts = [
+    {
+      firstName: "Барней",
+      lastName: "Стинсовський",
+      phone: "+380956319521",
+      gender: "male",
+    },
+    {
+      firstName: "Робін",
+      lastName: "Щербатська",
+      phone: "+380931460123",
+      gender: "female",
+    },
+    {
+      firstName: "Анонімний",
+      lastName: "Анонімус",
+      phone: "+380666666666",
+    },
+    {
+      firstName: "Лілія",
+      lastName: "Олдровна",
+      phone: "+380504691254",
+      gender: "female",
+    },
+    {
+      firstName: "Маршен",
+      lastName: "Еріксонян",
+      phone: "+380739432123",
+      gender: "male",
+    },
+    {
+      firstName: "Теодор",
+      lastName: "Мотсбес",
+      phone: "+380956319521",
+      gender: "male",
+    },
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>{width}</div>
-      </header>
-    </div>
+    <>
+      <ContactsContext.Provider value={contacts}>
+        <div className="App">
+          <div className="block">
+            <SearchUser />
+          </div>
+        </div>
+      </ContactsContext.Provider>
+    </>
   )
 }
 
