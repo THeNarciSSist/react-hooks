@@ -1,12 +1,15 @@
 .search-box {
   background-color: #6f6eb3;
   padding-top: 10px;
+  padding-bottom: 10px;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 2;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
 }
 
 .search {
@@ -22,4 +25,15 @@
 
 .search:focus {
   outline: none;
+}
+
+.checkbox-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.checkbox-block div {
+  display: flex;
+  column-gap: 5px;
 }
