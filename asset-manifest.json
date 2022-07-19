@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/react-hooks/static/css/main.e392b3e0.css",
-    "main.js": "/react-hooks/static/js/main.0a387016.js",
+    "main.css": "/react-hooks/static/css/main.684bc1c1.css",
+    "main.js": "/react-hooks/static/js/main.e9a2fac5.js",
+    "static/media/male.png": "/react-hooks/static/media/male.e3aa3781749f56ddb8c4.png",
+    "static/media/female.png": "/react-hooks/static/media/female.c58f909be94739305f6a.png",
     "index.html": "/react-hooks/index.html",
-    "main.e392b3e0.css.map": "/react-hooks/static/css/main.e392b3e0.css.map",
-    "main.0a387016.js.map": "/react-hooks/static/js/main.0a387016.js.map"
+    "main.684bc1c1.css.map": "/react-hooks/static/css/main.684bc1c1.css.map",
+    "main.e9a2fac5.js.map": "/react-hooks/static/js/main.e9a2fac5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e392b3e0.css",
-    "static/js/main.0a387016.js"
+    "static/css/main.684bc1c1.css",
+    "static/js/main.e9a2fac5.js"
   ]
 }
