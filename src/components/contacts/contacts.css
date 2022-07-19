@@ -5,6 +5,9 @@
   overflow-y: scroll;
   background-color: #6f6eb3;
   border-radius: 10px;
+  /* scrollbar for mozilla */
+  scrollbar-color: rgba(255, 255, 255, 1);
+  scrollbar-width: thin;
 }
 
 .block::-webkit-scrollbar {
@@ -43,4 +46,8 @@
 }
 .number {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.gender-img {
+  width: 1.5rem;
 }
