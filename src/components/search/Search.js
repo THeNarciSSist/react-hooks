@@ -40,8 +40,12 @@ function SearchUser() {
     if (value) {
       searchList = searchList.filter((contact) => {
         return (
-          contact.firstName.includes(value[0].toUpperCase() + value.slice(1)) ||
-          contact.lastName.includes(value[0].toUpperCase() + value.slice(1)) ||
+          contact.firstName.includes(
+            value[0].toUpperCase() + value.slice(1).toLowerCase()
+          ) ||
+          contact.lastName.includes(
+            value[0].toUpperCase() + value.slice(1).toLowerCase()
+          ) ||
           contact.phone.includes(value)
         )
       })
